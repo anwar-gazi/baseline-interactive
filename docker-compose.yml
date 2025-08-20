@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:latest
+    container_name: baseline_website
+    ports: 
+      - "80:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    
